@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quinn's Anime Tracker</title>
+
+  <link rel="stylesheet" href="anime.css">
+</head>
+
+<body>
+
+  <main class="notepad">
+
+    <h1>🍿 Quinn's Anime Tracker</h1>
+
+    <p class="counter">
+      Watched: <span id="watchedCount">0 / 0</span>
+    </p>
+
+    <div class="controls">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search anime..."
+      >
+
+    <select id="genreFilter">
+    <option value="All">All Genres</option>
+  </select>
+
+<select id="statusFilter">
+  <option value="All">All Anime</option>
+  <option value="Favorites">Favorites Only</option>
+  <option value="Watched">Watched</option>
+  <option value="Unwatched">Unwatched</option>
+</select>
+    </div>
+
+    <div id="animeList"></div>
+<div id="statsPanel" class="stats-panel"></div>
+  </main>
+<nav class="bottom-nav">
+
+  <button class="nav-item active" id="homeNav">
+  🏠
+  <span>Home</span>
+</button>
+
+  <button class="nav-item" id="favoritesNav">
+  ⭐
+  <span>Favorites</span>
+</button>
+
+  <button class="nav-item" id="statsNav">
+  📊
+  <span>Stats</span>
+</button>
+
+</nav>
+  <script src="anime.js"></script>
+
+</body>
+
+</html>
